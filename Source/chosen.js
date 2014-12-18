@@ -576,11 +576,11 @@ var Chosen = new Class({
 	},
 
 	result_activate: function(el){
-		el.addClass("active-result");
+		el.addClass("active-result").setStyle("display", "block");;
 	},
 
 	result_deactivate: function(el){
-		el.removeClass("active-result")
+		el.removeClass("active-result").setStyle("display", "none");
 	},
 
 	result_deselect: function(pos){
